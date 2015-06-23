@@ -7,6 +7,7 @@ rubyのバージョンは`2.2.0`を使用する
 ```
 bin/bundle --path vendor/bundle
 ```
+`.bundle`の設定が効いているので`--path vendor/bundle`省略可
 
 ## マイグレーション
 ```
