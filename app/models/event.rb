@@ -1,6 +1,7 @@
 class Event < ActiveRecord::Base
+  belongs_to :owner, class_name: 'User'
   validates :name, :place, :content, :start_time, :end_time, presence: true
-  validates :start_time_should_be_before_end_time, presence: true
+  # validates :start_time_should_be_before_end_time
 
   private
 
