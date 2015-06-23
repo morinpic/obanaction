@@ -7,3 +7,9 @@
 
 <%# 作成したユーザ情報を取ってこれる %>
 <p><%= @event.owner.email %></p>
+
+
+<% if user_signed_in? %>
+  <%= link_to 'イベントを編集する', edit_event_path(@event), class: 'button' %>
+  <%= link_to 'イベントを削除する', event_path(@event), class: 'button alert', method: :delete, data: { confirm: '本当に削除しますか？' } %>
+<% end %>
