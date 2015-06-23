@@ -14,6 +14,11 @@ bin/bundle --path vendor/bundle
 bin/rake db:migrete
 ```
 
+### 初期化
+```
+bin/rake db:migrete:reset
+```
+
 ## サーバ起動
 ```
 bin/rails s
