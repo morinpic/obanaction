@@ -19,3 +19,4 @@
 # Add
 vendor/bundle
 DS_Store
+public/system

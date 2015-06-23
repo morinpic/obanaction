@@ -1,0 +1,16 @@
+<%= simple_form_for(@event) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :place %>
+    <%= f.input :image %>
+    <%= f.input :start_time, as: :datepicker %>
+    <%= f.input :end_time, as: :datepicker %>
+    <%= f.input :content %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, '作成', data: { disable_with: '作成中...' } %>
+  </div>
+<% end %>
