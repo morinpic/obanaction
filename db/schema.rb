@@ -11,17 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150623055506) do
+ActiveRecord::Schema.define(version: 20150623082435) do
 
   create_table "events", force: :cascade do |t|
     t.integer  "owner_id"
-    t.string   "name",       null: false
-    t.string   "place",      null: false
-    t.datetime "start_time", null: false
-    t.datetime "end_time",   null: false
-    t.text     "content",    null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "name",               null: false
+    t.string   "place",              null: false
+    t.datetime "start_time",         null: false
+    t.datetime "end_time",           null: false
+    t.text     "content",            null: false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   add_index "events", ["owner_id"], name: "index_events_on_owner_id"

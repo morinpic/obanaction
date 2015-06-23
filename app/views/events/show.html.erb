@@ -1,5 +1,6 @@
 <h2><%= @event.name %></h2>
 <p><%= @event.place %></p>
+<p><%= image_tag @event.image.url(:original) if @event.image.present? %></p>
 <p><%= @event.start_time.strftime('%Y/%m/%d %H:%M') %></p>
 <p><%= @event.end_time.strftime('%Y/%m/%d %H:%M') %></p>
 <p><%= @event.content %></p>
