@@ -4,10 +4,17 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
+    <%= f.input :username, autofocus: true %>
     <%= f.input :email, required: true, autofocus: true %>
+    <%= f.input :gender %>
+    <%= f.input :birth_date, as: :datepicker %>
+    <%= f.input :email, required: true %>
+    <%= f.input :avatar %>
+    <%= f.input :introduction %>
+
     <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
     <%= f.input :password_confirmation, required: true %>
-    <%= f.input :avatar %>
+
   </div>
 
   <div class="form-actions">
