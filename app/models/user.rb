@@ -5,4 +5,13 @@ class User < ActiveRecord::Base
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+
+  has_attached_file :avatar,
+                    :styles => {
+                      :s  => "200x200#",
+                      :m  => "400x400#",
+                      :l  => "600x600#"
+                    }
+
+  validates_attachment_content_type :avatar, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
 end
