@@ -52,6 +52,8 @@ group :development, :test do
   gem 'spring'
 
   gem 'seed-fu', '~> 2.3.5'
+  gem 'hirb', '~> 0.7.3'
+  gem 'hirb-unicode', '~> 0.0.5'
 end
 
 group :development do
