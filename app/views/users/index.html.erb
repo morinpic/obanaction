@@ -1,0 +1,14 @@
+<ul>
+  <% @users.each do |u| %>
+    <li>
+      <%= link_to user_path(u) do %>
+        <%= image_tag u.avatar.url(:s), width: '50' if u.avatar.present? %>
+        <%= u.username %>
+        <%= u.gender %>
+        <%= u.birth_date %>
+        <%= u.introduction %>
+        <%= u.email %>
+      <% end %>
+    </li>
+  <% end %>
+</ul>
