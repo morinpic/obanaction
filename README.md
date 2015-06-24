@@ -14,6 +14,11 @@ bin/bundle --path vendor/bundle
 bin/rake db:migrete
 ```
 
+### ダミーデータセット
+```
+bin/rake db:seed_fu
+```
+
 ### 初期化
 ```
 bin/rake db:migrete:reset
