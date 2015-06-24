@@ -1,0 +1,8 @@
+<div>
+  <%= image_tag @user.avatar.url(:s), width: '50' if @user.avatar.present? %>
+  <%= @user.username %>
+  <%= @user.gender %>
+  <%= @user.birth_date %>
+  <%= @user.introduction %>
+  <%= @user.email %>
+</div>
