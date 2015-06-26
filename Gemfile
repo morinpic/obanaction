@@ -5,7 +5,6 @@ ruby '2.2.0'
 gem 'rails', '4.2.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
-gem 'compass-rails', '~> 2.0.4'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -41,6 +40,9 @@ gem 'devise', '~> 3.5.1'
 # 画像アップロード
 gem 'paperclip', '~> 4.3.0'
 gem 'aws-sdk', '< 2.0'
+
+gem 'compass-rails', '~> 2.0.4'
+gem 'slim-rails', '~> 3.0.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
