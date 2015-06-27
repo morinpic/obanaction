@@ -3,6 +3,6 @@
 
   .field
     = f.input :title
-    = f.input :body
+    = f.cktext_area :body
   .form-actions
     = f.button :submit, '作成', data: { disable_with: '作成中...' }
